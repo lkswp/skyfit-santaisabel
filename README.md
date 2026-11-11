@@ -1,8 +1,8 @@
-# Skyfit Santa Isabel · Conteúdo de Outubro
+# Skyfit Santa Isabel · Plano de conteúdo dos criadores
 
 Site com o plano de conteúdo dos criadores, o checklist salvo no banco de dados e o painel do gestor.
 
-- `index.html` → o site (cada criador tem o próprio link: `/#alan-news`, `/#gisele-grenza`, `/#paola-igarasi`, `/#lucas-lemos`, `/#caio-tanaka`)
+- `index.html` + `assets/` + `data/plano.js` → o site (cada criador tem o próprio link: `/#alan-news`, `/#gisele-grenza`, `/#paola-igarasi`, `/#vitoria-duarte`, `/#caio-tanaka`)
 - `painel.html` → painel do gestor, em `/painel` (pede senha)
 - `api/checklist.js` → salva e lê o checklist de cada criador
 - `api/painel.js` → entrega o progresso de todos pro painel (só com a senha)
