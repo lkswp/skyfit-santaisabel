@@ -434,3 +434,10 @@ section { padding: clamp(64px, 10vw, 150px) var(--gutter); }
   .ticket-stub { padding: 8px; }
   .ticket .btn { padding: 0 10px; gap: 6px; font-size: 12.5px; min-height: 40px; }
 }
+
+/* Celular: os nomes do topo rolam de lado; a borda direita esmaece para mostrar que tem mais. */
+@media (max-width: 720px) {
+  .top { padding-right: 0; }
+  .top-nav { padding-right: 28px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 40px), transparent); }
+  .top-nav a { padding: 9px 9px; }
+}
