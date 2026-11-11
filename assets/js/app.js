@@ -406,7 +406,8 @@
     if (lenis) lenis.scrollTo(0, { immediate: true }); else window.scrollTo(0, 0);
     if (p) { updateProgress(); setupSpy(); syncChecklist(p); } else startClock();
     if (hasGsap) {
-      gsap.set(app, { autoAlpha: 1, y: 0 });
+      // Sem transform no #app: qualquer transform num pai quebra o "position: fixed" da agenda presa ao scroll.
+      gsap.set(app, { autoAlpha: 1, clearProps: "transform,translate,rotate,scale" });
       (p ? motionCreator : motionHome)(first ? 0 : .05);
       ScrollTrigger.refresh();
     }
