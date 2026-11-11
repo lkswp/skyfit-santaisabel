@@ -210,7 +210,7 @@
           "<h4>" + esc(s[0]) + '</h4><div class="what">' + esc(s[1]) + '</div><div class="say">' + fill(s[2], p) + '</div><div class="stk">' + esc(p.cupom) + "</div></article>";
       }).join("") + "</div>" +
       '<p class="hint">Arraste para o lado para ver as cinco ideias.</p>' +
-      '<div class="week" data-stg><div><b>Seg</b><p>Prova: você treinando ou a estrutura, com o cupom.</p></div><div><b>Qua</b><p>Desculpa: enquete ou caixinha, respondida da academia.</p></div><div><b>Sex</b><p>Oferta: ' + esc(PLANO.oferta.frase.toLowerCase()) + " até " + esc(PLANO.oferta.fimTexto) + ", com o cupom.</p></div></div>" +
+      '<div class="week" data-stg><div><b>Seg</b><p>Prova: você treinando ou a estrutura, com o cupom.</p></div><div><b>Qua</b><p>Desculpa: enquete ou caixinha, respondida da academia.</p></div><div><b>Sex</b><p>Oferta: ' + esc(PLANO.oferta.frase.charAt(0).toLowerCase() + PLANO.oferta.frase.slice(1)) + " até " + esc(PLANO.oferta.fimTexto) + ", com o cupom.</p></div></div>" +
     "</section>" +
 
     '<section class="csec" id="checklist">' +
